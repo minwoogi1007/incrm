@@ -1,0 +1,13 @@
+package com.eincrm;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class IncrmApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(IncrmApplication.class, args);
+    }
+
+}
