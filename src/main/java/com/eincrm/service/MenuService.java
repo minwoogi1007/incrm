@@ -1,7 +1,7 @@
 package com.eincrm.service;
 
-import com.wio.crm.mapper.MenuMapper;
-import com.wio.crm.model.Menu;
+import com.eincrm.mapper.MenuMapper;
+import com.eincrm.model.Menu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

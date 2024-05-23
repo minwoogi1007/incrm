@@ -1,7 +1,7 @@
 package com.eincrm.config;
 
-import com.wio.crm.exception.UserNotConfirmedException;
-import com.wio.crm.service.CustomUserDetailsService;
+import com.eincrm.exception.UserNotConfirmedException;
+import com.eincrm.service.CustomUserDetailsService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

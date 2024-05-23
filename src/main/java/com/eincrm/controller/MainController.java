@@ -1,6 +1,6 @@
 package com.eincrm.controller;
 
-import com.wio.crm.service.DashboardService;
+import com.eincrm.service.DashboardService;
 import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +28,7 @@ public class MainController {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication == null) {
             logger.info("No authentication information available.");
-            return "redirect:/sign-in";
+            return "redirect:/login";
         }
 
 
@@ -40,7 +40,7 @@ public class MainController {
         if(tcntEmpData!=null){
             model.addAllAttributes(tcntEmpData);
         }else{
-            return "redirect:/sign-in";
+            return "redirect:/login";
         }
 
 
@@ -49,7 +49,7 @@ public class MainController {
         model.addAttribute("isEmployee", isEmployee);
 
         model.addAttribute("content", "contents"); // Initial content
-        return "contents";
+        return "main";
     }
 
 

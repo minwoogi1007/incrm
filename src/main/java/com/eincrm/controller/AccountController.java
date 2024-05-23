@@ -1,8 +1,8 @@
 package com.eincrm.controller;
 
-import com.wio.crm.model.Account;
-import com.wio.crm.model.Tcnt01Emp;
-import com.wio.crm.service.AccountService;
+import com.eincrm.model.Account;
+import com.eincrm.model.Tcnt01Emp;
+import com.eincrm.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

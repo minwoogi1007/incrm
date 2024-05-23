@@ -1,6 +1,6 @@
 package com.eincrm.service;
 
-import com.wio.crm.mapper.LoginHistoryMapper;
+import com.eincrm.mapper.LoginHistoryMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

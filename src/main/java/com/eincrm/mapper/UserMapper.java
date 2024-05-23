@@ -1,6 +1,6 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.UserInfo;
+import com.eincrm.model.UserInfo;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 

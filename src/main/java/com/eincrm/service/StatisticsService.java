@@ -1,8 +1,8 @@
 package com.eincrm.service;
 
-import com.wio.crm.config.CustomUserDetails;
-import com.wio.crm.mapper.StaticsMapper;
-import com.wio.crm.model.Statics;
+import com.eincrm.config.CustomUserDetails;
+import com.eincrm.mapper.StaticsMapper;
+import com.eincrm.model.Statics;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Menu;
+import com.eincrm.model.Menu;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

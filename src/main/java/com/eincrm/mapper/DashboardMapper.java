@@ -1,7 +1,7 @@
 package com.eincrm.mapper;
 
 
-import com.wio.crm.model.DashboardData;
+import com.eincrm.model.DashboardData;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Statics;
+import com.eincrm.model.Statics;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

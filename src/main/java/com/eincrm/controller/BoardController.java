@@ -1,10 +1,10 @@
 package com.eincrm.controller;
 
-import com.wio.crm.config.CustomUserDetails;
-import com.wio.crm.model.Board;
-import com.wio.crm.model.Tcnt01Emp;
-import com.wio.crm.model.Temp01;
-import com.wio.crm.service.BoardService;
+import com.eincrm.config.CustomUserDetails;
+import com.eincrm.model.Board;
+import com.eincrm.model.Tcnt01Emp;
+import com.eincrm.model.Temp01;
+import com.eincrm.service.BoardService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

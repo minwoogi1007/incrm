@@ -1,6 +1,6 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Temp01;
+import com.eincrm.model.Temp01;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;

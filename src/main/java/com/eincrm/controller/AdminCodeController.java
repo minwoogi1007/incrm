@@ -1,6 +1,6 @@
 package com.eincrm.controller;
 
-import com.wio.crm.service.AdminCodeService;
+import com.eincrm.service.AdminCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,7 +1,7 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Account;
-import com.wio.crm.model.Tcnt01Emp;
+import com.eincrm.model.Account;
+import com.eincrm.model.Tcnt01Emp;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

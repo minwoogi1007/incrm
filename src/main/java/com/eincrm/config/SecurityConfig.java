@@ -34,6 +34,7 @@ public class SecurityConfig {
                         .requestMatchers("/empl").hasAuthority("ROLE_EMPLOYEE")
                         .requestMatchers("/encrypt-passwords","/encrypt-password", "/encryption","/check-userid-availability","/apply-userid").permitAll()
                         .requestMatchers("/download/**").permitAll()
+                        .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()  // 정적 리소스에 대한 접근 허용
                         .anyRequest().authenticated())
                 .formLogin(form -> form
                         .loginPage("/login")

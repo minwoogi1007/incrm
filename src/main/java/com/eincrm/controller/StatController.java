@@ -1,7 +1,7 @@
 package com.eincrm.controller;
 
-import com.wio.crm.model.Statics;
-import com.wio.crm.service.StatisticsService;
+import com.eincrm.model.Statics;
+import com.eincrm.service.StatisticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

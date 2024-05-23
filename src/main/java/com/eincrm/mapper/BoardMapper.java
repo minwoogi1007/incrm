@@ -1,6 +1,6 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Board;
+import com.eincrm.model.Board;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

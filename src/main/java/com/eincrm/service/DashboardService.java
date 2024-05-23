@@ -1,10 +1,10 @@
 package com.eincrm.service;
 
-import com.wio.crm.config.CustomUserDetails;
-import com.wio.crm.mapper.DashboardMapper;
-import com.wio.crm.mapper.Tcnt01EmpMapper;
-import com.wio.crm.mapper.Temp01Mapper;
-import com.wio.crm.model.DashboardData;
+import com.eincrm.config.CustomUserDetails;
+import com.eincrm.mapper.DashboardMapper;
+import com.eincrm.mapper.Tcnt01EmpMapper;
+import com.eincrm.mapper.Temp01Mapper;
+import com.eincrm.model.DashboardData;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

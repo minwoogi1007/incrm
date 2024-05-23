@@ -1,8 +1,8 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Comment;
-import com.wio.crm.model.Consultation;
-import com.wio.crm.model.History;
+import com.eincrm.model.Comment;
+import com.eincrm.model.Consultation;
+import com.eincrm.model.History;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

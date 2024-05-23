@@ -1,7 +1,7 @@
 package com.eincrm.service;
 
 
-import com.wio.crm.model.Board;
+import com.eincrm.model.Board;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

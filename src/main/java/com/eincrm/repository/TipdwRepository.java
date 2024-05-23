@@ -1,6 +1,6 @@
 package com.eincrm.repository;
 
-import com.wio.crm.model.Tipdw;
+import com.eincrm.model.Tipdw;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

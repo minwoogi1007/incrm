@@ -1,8 +1,8 @@
 package com.eincrm.controller;
 
-import com.wio.crm.mapper.TipdwMapper;
-import com.wio.crm.model.UserInfo;
-import com.wio.crm.service.LoginService;
+import com.eincrm.mapper.TipdwMapper;
+import com.eincrm.model.UserInfo;
+import com.eincrm.service.LoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

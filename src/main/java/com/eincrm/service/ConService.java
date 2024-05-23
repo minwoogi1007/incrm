@@ -1,10 +1,10 @@
 package com.eincrm.service;
 
-import com.wio.crm.config.CustomUserDetails;
-import com.wio.crm.mapper.ConsMapper;
-import com.wio.crm.model.Comment;
-import com.wio.crm.model.Consultation;
-import com.wio.crm.model.History;
+import com.eincrm.config.CustomUserDetails;
+import com.eincrm.mapper.ConsMapper;
+import com.eincrm.model.Comment;
+import com.eincrm.model.Consultation;
+import com.eincrm.model.History;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

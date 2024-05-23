@@ -1,8 +1,8 @@
 package com.eincrm.config;
 
-import com.wio.crm.model.Menu;
-import com.wio.crm.service.LoginHistoryService;
-import com.wio.crm.service.MenuService;
+import com.eincrm.model.Menu;
+import com.eincrm.service.LoginHistoryService;
+import com.eincrm.service.MenuService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

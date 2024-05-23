@@ -1,7 +1,7 @@
 package com.eincrm.service;
 
-import com.wio.crm.mapper.UserMapper;
-import com.wio.crm.model.UserInfo;
+import com.eincrm.mapper.UserMapper;
+import com.eincrm.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

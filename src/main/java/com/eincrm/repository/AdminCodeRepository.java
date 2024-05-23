@@ -1,6 +1,6 @@
 package com.eincrm.repository;
 
-import com.wio.crm.Entity.AdminCode;
+import com.eincrm.Entity.AdminCode;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

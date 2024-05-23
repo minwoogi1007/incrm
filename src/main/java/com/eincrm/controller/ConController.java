@@ -1,11 +1,11 @@
 package com.eincrm.controller;
 
-import com.wio.crm.Entity.AdminCode;
-import com.wio.crm.model.Comment;
-import com.wio.crm.model.Consultation;
-import com.wio.crm.model.History;
-import com.wio.crm.service.AdminCodeService;
-import com.wio.crm.service.ConService;
+import com.eincrm.Entity.AdminCode;
+import com.eincrm.model.Comment;
+import com.eincrm.model.Consultation;
+import com.eincrm.model.History;
+import com.eincrm.service.AdminCodeService;
+import com.eincrm.service.ConService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;

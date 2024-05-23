@@ -1,8 +1,8 @@
 package com.eincrm.service;
 
-import com.wio.crm.config.CustomUserDetails;
-import com.wio.crm.mapper.BoardMapper;
-import com.wio.crm.model.Board;
+import com.eincrm.config.CustomUserDetails;
+import com.eincrm.mapper.BoardMapper;
+import com.eincrm.model.Board;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

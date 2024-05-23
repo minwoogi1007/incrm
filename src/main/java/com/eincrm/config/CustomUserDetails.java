@@ -1,7 +1,7 @@
 package com.eincrm.config;
 
-import com.wio.crm.model.Tcnt01Emp;
-import com.wio.crm.model.Temp01;
+import com.eincrm.model.Tcnt01Emp;
+import com.eincrm.model.Temp01;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 

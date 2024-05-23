@@ -1,6 +1,6 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.Entity.AdminCode;
+import com.eincrm.Entity.AdminCode;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

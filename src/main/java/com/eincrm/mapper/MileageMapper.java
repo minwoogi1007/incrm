@@ -1,7 +1,7 @@
 package com.eincrm.mapper;
 
-import com.wio.crm.model.Mileage;
-import com.wio.crm.model.Transaction;
+import com.eincrm.model.Mileage;
+import com.eincrm.model.Transaction;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,8 +1,8 @@
 package com.eincrm.controller;
 
-import com.wio.crm.model.Mileage;
-import com.wio.crm.model.Transaction;
-import com.wio.crm.service.MileageService;
+import com.eincrm.model.Mileage;
+import com.eincrm.model.Transaction;
+import com.eincrm.service.MileageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
