@@ -15,39 +15,46 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+
     @Autowired
     private AjaxAuthenticationFailureHandler ajaxAuthenticationFailureHandler;
+
     @Autowired
-    private CustomSuccessHandler  customSuccessHandler ;
+    private CustomSuccessHandler customSuccessHandler;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf
+                        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                         .ignoringRequestMatchers(
-                                new AntPathRequestMatcher("/logout"),  // "/logout"에 대한 CSRF 검증을 비활성화
-                                new AntPathRequestMatcher("/api/**"),  // "/api/**" 경로에 대해 CSRF 보호를 비활성화
-                                new AntPathRequestMatcher("/download/**") // "/download/**" 경로에 대해 CSRF 보호를 비활성화
-                        ).csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                                new AntPathRequestMatcher("/logout"),
+                                new AntPathRequestMatcher("/api/**"),
+                                new AntPathRequestMatcher("/download/**")
+                        )
                 )
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/consultations","/board/create/saveBoard").hasAuthority("ROLE_USER")
+                        .requestMatchers("/api/consultations", "/board/create/saveBoard").hasAuthority("ROLE_USER")
                         .requestMatchers("/empl").hasAuthority("ROLE_EMPLOYEE")
-                        .requestMatchers("/encrypt-passwords","/encrypt-password", "/encryption","/check-userid-availability","/apply-userid").permitAll()
+                        .requestMatchers("/encrypt-passwords", "/encrypt-password", "/encryption", "/check-userid-availability", "/apply-userid").permitAll()
                         .requestMatchers("/download/**").permitAll()
-                        .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()  // 정적 리소스에 대한 접근 허용
-                        .anyRequest().authenticated())
+                        .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()
+                        .anyRequest().authenticated()
+                )
                 .formLogin(form -> form
                         .loginPage("/login")
                         .usernameParameter("userId")
                         .failureHandler(ajaxAuthenticationFailureHandler)
                         .successHandler(customSuccessHandler)
-                        .permitAll())
+                        .permitAll()
+                )
                 .logout(logout -> logout
                         .logoutUrl("/logout")
                         .logoutSuccessUrl("/login?logout")
                         .invalidateHttpSession(true)
                         .deleteCookies("JSESSIONID", "XSRF-TOKEN")
-                        .permitAll());
+                        .permitAll()
+                );
         return http.build();
     }
 
@@ -60,6 +67,4 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
-
 }

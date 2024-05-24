@@ -9,8 +9,8 @@
   <!-- Custom CSS -->
   <link href="/css/sign-in.css" rel="stylesheet">
   <!-- CSRF Meta Tags -->
-  <meta name="_csrf" content="${_csrf.token}">
-  <meta name="_csrf_header" content="${_csrf.headerName}">
+  <meta name="_csrf" content="${csrfToken}">
+  <meta name="_csrf_header" content="${csrfHeaderName}">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
@@ -38,24 +38,33 @@
     var csrfToken = $('meta[name="_csrf"]').attr('content');
     var csrfHeader = $('meta[name="_csrf_header"]').attr('content');
 
+    console.log("CSRF Token: " + csrfToken);
+    console.log("CSRF Header: " + csrfHeader);
+
     $('#loginForm').on('submit', function(event) {
       event.preventDefault();
       var formData = {
         userId: $('#username').val(),
         password: $('#password').val()
       };
+
+      console.log("Form Data: ", formData);
+
       $.ajax({
         type: 'POST',
         url: '/apply-userid',
         contentType: 'application/json',
         data: JSON.stringify(formData),
         beforeSend: function(xhr) {
+          console.log("Setting CSRF Header");
           xhr.setRequestHeader(csrfHeader, csrfToken);
         },
         success: function(response) {
+          console.log("AJAX Success: ", response);
           window.location.href = "/main";
         },
         error: function(error) {
+          console.log("AJAX Error: ", error);
           alert('로그인 실패. 아이디와 비밀번호를 확인하세요.');
         }
       });
